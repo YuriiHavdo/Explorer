@@ -51,7 +51,7 @@ height: 40px;
 align-content: center;
 padding-top: 39px;
 padding-bottom: 2px;
-    }
+}
 .menu__item {
 margin: 0px;
 padding:0px 12px 0px 12px;
@@ -66,17 +66,6 @@ letter-spacing: 1.3px;
 text-transform: uppercase;
 color: #fff; 
 }
-.active-nav {
-font-size: 11px;
-font-family: Montserrat;
-font-weight: 400;
-letter-spacing: 1.3px;
-text-transform: uppercase;
-color: #fff;
-}
-._padding {
-padding-top: 12px;
-}
 .logotip {
 width: 176px;
 height: 40px;
@@ -87,6 +76,7 @@ display: inline-block;
   }
   
 li > a {
+position: absolute;
 color: #333;
 text-decoration: none;
 display: inline-block;
