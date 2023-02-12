@@ -24,12 +24,10 @@ box-sizing: content-box;
 /* ---------------------------------------------HEADER--------------------------------------------------------- */
 .header_container {
 width: 800px;
-height: 122px;
 padding-top: 60px;
 }
 .header_logo {
 width: 800px;
-height: 40px;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -47,7 +45,6 @@ list-style: none;
 margin: 0px;
 padding: 0px;
 width: 800px;
-height: 40px;
 align-content: center;
 padding-top: 39px;
 padding-bottom: 2px;
@@ -57,6 +54,12 @@ margin: 0px;
 padding:0px 12px 0px 12px;
 display: flex;
 flex-wrap: wrap;
+}
+li:first-child {
+    padding-left: 0px;
+}
+li:last-child {
+    padding-right: 0;
 }
 .menu__link {
 font-size: 11px;
@@ -68,7 +71,6 @@ color: #fff;
 }
 .logotip {
 width: 176px;
-height: 40px;
 }
 li {
 list-style-type: none;
@@ -112,33 +114,28 @@ background: rgba(255, 255, 255, 0.3);
 /* ---------------------------------------------MAIN--------------------------------------------------------- */
 .main {
     width: 800px;
-    height: 2080px;
+    min-height: 2080px;
     padding-top: 58px;
 }
 /* -------------------------------------------BLOCK-ONE------------------------------------------- */
 .block_one {
-    width: 800px;
-    height: 330px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-image: url(../img/block-one-background.png);
     position: relative;
+    min-height: 300px;
 }
 .comment_block-one{
-    width: 680px;
-    height: 40px;
     display: flex;
-    padding: 160px 60px 0px 60px;
+    padding: 0px 60px 0px 60px;
 }
 .comment_block-one-image {
     width: 40px;
-    height: 40px;
-    padding-right: 14px;
+    border-radius: 4px;
+    max-height: 40px;
 }
 .comment_block-one-name {
-    width: 101px;
-    height: 19px;
     display: flex;
     margin: 0px;
 }
@@ -152,7 +149,6 @@ background: rgba(255, 255, 255, 0.3);
 .comment_block-one-text {
     display: flex;
     width: 108px;
-    height: 19px;
     padding-top: 2px;
 }
 .comment_block-one-date {
@@ -165,11 +161,10 @@ background: rgba(255, 255, 255, 0.3);
 }
 .comment_block-one_name-and-text {
     width: 108px;
-    height: 40px;
+    padding-left: 14px;
 }
 .title_block-one {
     width: 470px;
-    height: 70px;
     display: flex;
     align-items: center;
     padding: 20px 270px 40px 60px;
@@ -212,12 +207,12 @@ background: rgba(255, 255, 255, 0.3);
     position: relative;
     display: flex;
     width: 800px;
-    height: 180px;
+    min-height: 180px;
     flex-direction: column;
 }
 .block_two-main-text {
     width: 680px;
-    height: 80px;
+    min-height: 80px;
     padding: 35px 60px 0px 60px;
 }
 .block_two-text {
@@ -227,10 +222,12 @@ background: rgba(255, 255, 255, 0.3);
     line-height: 25px;
     color: #333333;
     margin: 0;
+    min-height: 80px;
+    width: 661px;
+
 }
 .block_two-buttons {
     width: 158px;
-    height: 30px;
     padding: 0px 582px 35px 60px;
     text-decoration: none;
 }
@@ -245,25 +242,26 @@ background: rgba(255, 255, 255, 0.3);
 
 /* -------------------------------------BLOCK-THREE------------------------------------- */
 .block_three {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 800px;
-    height: 330px;
+    min-height: 330px;
     background-image: url(../img/block-three-background.png);
     position: relative;
 }
 .comment_block-three {
     width: 680px;
-    height: 40px;
     display: flex;
-    padding: 160px 60px 20px 60px;
+    padding: 0px 60px 20px 60px;
 }
 .comment_block_three-image {
     width: 40px;
-    height: 40px;
-    padding-right: 14px;
+    max-height: 40px;
+    border-radius: 4px;
 }
 .comment_block-three-name {
     width: 158px;
-    height: 19px;
 }
 .comment_block_three-jessica-simpson {
     font-family: 'Montserrat';
@@ -288,17 +286,15 @@ background: rgba(255, 255, 255, 0.3);
 }
 .comment_block-three-name-and-text {
     width: 158px;
-    height: 40px;
     display: flex;
     flex-direction: column;
+    padding-left: 14px;
 }
 .title_block-three {
     width: 503px;
-    height: 70px;
 }
 .title_block-three {
     width: 503px;
-    height: 70px;
     display: flex;
     padding: 0px 237px 40px 60px;
 }
@@ -313,7 +309,6 @@ background: rgba(255, 255, 255, 0.3);
 /* -------------------------------------PHOTOGRAPHY-LOGO-ONE-------------------------------------------- */
 .photography-logo-one {
     width: 102px;
-    height: 25px;
     position: absolute;
     background:rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -335,7 +330,6 @@ background: rgba(255, 255, 255, 0.3);
 /* -------------------------------------BLOCK-FOUR-------------------------------------------- */
 .block_four {
     width: 800px;
-    height: 180px;
     display: flex;
     flex-direction: column;  
     background-color: #fff;
@@ -352,10 +346,10 @@ background: rgba(255, 255, 255, 0.3);
     line-height: 25px;
     color: #333333ff;
     margin: 0;
+    width: 661px;
 }
 .block_four_buttons {
     width: 158px;
-    height: 30px;
     padding: 0px 582px 35px 60px;
 }
 .block_four-btn {
@@ -369,34 +363,33 @@ background: rgba(255, 255, 255, 0.3);
 }
 /* -------------------------------------BLOCK-FIVE-------------------------------------------- */
 .block_five {
-width: 800px;
-height: 330px;
-display: flex;
-flex-direction: column;
-background-image: url(../img/block-five-background.png);
-position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 800px;
+    min-height: 330px;
+    background-image: url(../img/block-five-background.png);
+    position: relative;
 }
 .comment_block-five {
     width: 680px;
-    height: 40px;
     display: flex;
-    padding: 160px 60px 20px 60px;
+    padding: 0px 60px 20px 60px;
 }
 .comment_block-five_image {
     width: 40px;
-    height: 40px;
-    padding-right: 14px;
+    max-height: 40px;
+    border-radius: 4px;
 }
 .comment_block_five_name_and_text {
     width: 101px;
-    height: 40px;
     display: flex;
     flex-direction: column;
+    padding-left: 14px;
 }
 .comment_block_five_name {
     padding-bottom: 2px;
     width: 101px;
-    height: 19px;
 }
 .comment_block_five_luce-cage {
     font-family: 'Montserrat';
@@ -408,7 +401,6 @@ position: relative;
 }
 .comment_block_five_text {
     width: 86px;
-    height: 19px;
 }
 .comment_bock_five_date {
     font-family: 'Lato';
@@ -420,7 +412,6 @@ position: relative;
 }
 .block_five_title {
     width: 451px;
-    height: 70px;
     padding: 0px 289px 40px 60px;
 }
 .block_five_title_text {
@@ -434,7 +425,6 @@ position: relative;
 
 .photography-logo-two {
     width: 102px;
-    height: 25px;
     position: absolute;
     background:rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -473,10 +463,10 @@ position: relative;
     line-height: 25px;
     color: #333333;
     margin: 0;
+    width: 661px;
 }
 .block_six_buttons {
     width: 158px;
-    height: 30px;
     padding: 0px 582px 35px 60px;
 }
 .block_six_btn {
