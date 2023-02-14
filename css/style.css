@@ -88,7 +88,8 @@ margin-right: auto;
 }
   
 li > a::after {
-content: "";
+    position: absolute;
+    content: "";
 display: block;
 margin: auto;
 height: 2px;
@@ -96,11 +97,11 @@ width: 0;
 top: 5px;
 background: transparent;
 transition: all 0.3s;
-margin-top: 14px;
+margin-top: 24px;
 align-items: center;
 }
   
-li > a:hover::after, li > a.active-nav::after {
+li > a:hover::after {
 width: 100%;
 background: rgba(255, 255, 255, 0.3);
 }
