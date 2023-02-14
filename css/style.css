@@ -26,6 +26,11 @@ box-sizing: content-box;
 width: 800px;
 padding-top: 60px;
 }
+.header {
+    min-height: 122px;
+    display: flex;
+    flex-direction: column;
+}
 .header_logo {
 width: 800px;
 display: flex;
@@ -36,6 +41,7 @@ padding-top: 1px;
 .header_menu {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 39px;
 }
 .menu__list {
 display: flex;
@@ -46,8 +52,8 @@ margin: 0px;
 padding: 0px;
 width: 800px;
 align-content: center;
-padding-top: 39px;
-padding-bottom: 2px;
+padding-top: 12px;
+/* padding-bottom: 2px; */
 }
 .menu__item {
 margin: 0px;
@@ -127,14 +133,23 @@ background: rgba(255, 255, 255, 0.3);
     position: relative;
     min-height: 300px;
 }
+.block_one_general {
+    position: absolute;
+    max-width: 680px;
+   left: 60px;
+   bottom: 40px;
+}
 .comment_block-one{
     display: flex;
-    padding: 0px 60px 0px 60px;
+    justify-content: space-between;
+    max-width: 162px;
+    padding-bottom: 20px;
 }
 .comment_block-one-image {
     width: 40px;
     border-radius: 4px;
     max-height: 40px;
+    margin: 0;
 }
 .comment_block-one-name {
     display: flex;
@@ -149,8 +164,8 @@ background: rgba(255, 255, 255, 0.3);
 }
 .comment_block-one-text {
     display: flex;
-    width: 108px;
     padding-top: 2px;
+    
 }
 .comment_block-one-date {
     font-family: 'Lato';
@@ -160,15 +175,10 @@ background: rgba(255, 255, 255, 0.3);
     margin: 0px;
     color: #fff;
 }
-.comment_block-one_name-and-text {
-    width: 108px;
-    padding-left: 14px;
-}
 .title_block-one {
     width: 470px;
     display: flex;
     align-items: center;
-    padding: 20px 270px 40px 60px;
 }
 .title-text-block-one {
     margin: 0;
@@ -182,7 +192,7 @@ background: rgba(255, 255, 255, 0.3);
 .travel-logo {
     position: absolute;
     width: 60px;
-    height: 25px;
+    min-height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,7 +262,6 @@ background: rgba(255, 255, 255, 0.3);
     position: relative;
 }
 .comment_block-three {
-    width: 680px;
     display: flex;
     padding: 0px 60px 20px 60px;
 }
@@ -260,9 +269,6 @@ background: rgba(255, 255, 255, 0.3);
     width: 40px;
     max-height: 40px;
     border-radius: 4px;
-}
-.comment_block-three-name {
-    width: 158px;
 }
 .comment_block_three-jessica-simpson {
     font-family: 'Montserrat';
@@ -286,7 +292,6 @@ background: rgba(255, 255, 255, 0.3);
     padding-top: 2px;
 }
 .comment_block-three-name-and-text {
-    width: 158px;
     display: flex;
     flex-direction: column;
     padding-left: 14px;
