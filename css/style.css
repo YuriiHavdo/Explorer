@@ -53,7 +53,6 @@ padding: 0px;
 width: 800px;
 align-content: center;
 padding-top: 12px;
-/* padding-bottom: 2px; */
 }
 .menu__item {
 margin: 0px;
@@ -134,10 +133,8 @@ background: rgba(255, 255, 255, 0.3);
     min-height: 300px;
 }
 .block_one_general {
-    position: absolute;
     max-width: 680px;
-   left: 60px;
-   bottom: 40px;
+    padding: 40px 60px 40px 60px;
 }
 .comment_block-one{
     display: flex;
@@ -166,6 +163,9 @@ background: rgba(255, 255, 255, 0.3);
     display: flex;
     padding-top: 2px;
     
+}
+.comment_block-one_name-and-text {
+    min-height: 40px;
 }
 .comment_block-one-date {
     font-family: 'Lato';
