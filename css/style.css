@@ -110,6 +110,7 @@ li > a:hover::after {
 width: 100%;
 background: rgba(255, 255, 255, 0.3);
 }
+
 /* ---------------------------------------------HEADER-END--------------------------------------------------------- */
 
 
@@ -138,19 +139,20 @@ background: rgba(255, 255, 255, 0.3);
 }
 .comment_block-one{
     display: flex;
-    justify-content: space-between;
     max-width: 162px;
     padding-bottom: 20px;
+    min-width: 680px;
 }
 .comment_block-one-image {
     width: 40px;
     border-radius: 4px;
     max-height: 40px;
-    margin: 0;
+    margin-right: 14px;
 }
 .comment_block-one-name {
     display: flex;
     margin: 0px;
+    max-width: 680px;
 }
 .comment_block_one-luce-cage {
     font-family: 'Montserrat';
