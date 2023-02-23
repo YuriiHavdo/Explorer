@@ -188,18 +188,23 @@ width: 176px;
 /* -------------------------------------BLOCK-TWO------------------------------------- */
 .block_two {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+.block_two .block_two-main .block_two-buttons:hover .block_two-btn {
+    text-decoration: underline;
 }
 .block_two-main {
-    position: relative;
     display: flex;
-    width: 800px;
-    min-height: 180px;
     flex-direction: column;
+    min-height: 110px;
 }
 .block_two-main-text {
-    width: 680px;
     min-height: 80px;
-    padding: 35px 60px 0px 60px;
+    display: flex;
 }
 .block_two-text {
     font-family: 'Lato';
@@ -213,9 +218,9 @@ width: 176px;
 
 }
 .block_two-buttons {
-    width: 158px;
-    padding: 0px 582px 35px 60px;
     text-decoration: none;
+    display: flex;
+    min-height: 30px;
 }
 .block_two-btn {
     text-decoration: none;
@@ -426,16 +431,19 @@ width: 176px;
 }
 /* -------------------------------------BLOCK-SIX-------------------------------------------- */
 .block_six {
-    width: 800px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
 }
 .block_six_main {
-    width: 680px;
-    height: 80px;
-    padding: 35px 60px 0px 60px;
+    min-height: 80px;
+}
+.block-six-btn {
+    display: flex;
+    flex-direction: column;
 }
 .block_six_text {
     font-family: 'Lato';
@@ -445,10 +453,11 @@ width: 176px;
     color: #333333;
     margin: 0;
     width: 661px;
+    min-height: 80px;
 }
 .block_six_buttons {
-    width: 158px;
-    padding: 0px 582px 35px 60px;
+    display: flex;
+    min-height: 30px;
 }
 .block_six_btn {
     font-family: 'Lato';
@@ -458,6 +467,9 @@ width: 176px;
     color: #8D4FDB;
     text-decoration: none;
 }
+.block_six .block-six-btn .block_six_buttons:hover .block_six_btn {
+    text-decoration: underline;
+}
 /* -------------------------------------BLOCK-SEVEN-------------------------------------------- */
 .block_seven {
     width: 800px;
@@ -465,11 +477,12 @@ width: 176px;
     background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .block_seven_title {
     width: 300px;
     height: 36px;
-    padding: 49px 250px 21px 250px;
+    margin: 49px 0px 21px 0px;
     display: flex;
 }
 .block_seven_text {
@@ -481,14 +494,15 @@ width: 176px;
     text-align: center;
 }
 .block_seven_buttons {
-    width: 182px;
-    height: 45px;
-    padding: 0px 309px 60px 309px;
     display: flex;
 }
 .block_seven .block_seven_buttons:hover .block_seven_btn {
-    background-color: red;
-    transition: all 3s;
+    background-color: #F1F1F1;
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #8D4FDB;
+    border: 1px solid transparent;
+    border-color: #8D4FDB;
 }
 .block_seven_btn {
     margin: 0;
@@ -502,6 +516,7 @@ width: 176px;
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #8D4FDB;
+    border: 1px solid transparent;
     border-radius: 3px;
     padding: 8px 25px 7px 25px;
 }
