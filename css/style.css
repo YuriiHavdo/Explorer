@@ -23,13 +23,11 @@ box-sizing: content-box;
 }
 /* ---------------------------------------------HEADER--------------------------------------------------------- */
 .header_container {
-width: 800px;
-padding-top: 60px;
 }
 .header {
-    min-height: 122px;
     display: flex;
     flex-direction: column;
+    margin: 58px 0px 76px 0px;
 }
 .header_logo {
 width: 800px;
@@ -41,30 +39,38 @@ padding-top: 1px;
 .header_menu {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 39px;
+    justify-content: center;
 }
 .menu__list {
 display: flex;
-justify-content: center;
 flex-wrap: wrap;
 list-style: none;  
 margin: 0px;
-padding: 0px;
-width: 800px;
-align-content: center;
-padding-top: 12px;
+padding-top: 51px;
+padding-left: 0px;
+}
+.span {
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+.header_menu .menu__list .menu__item:hover .span {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
 }
 .menu__item {
 margin: 0px;
-padding:0px 12px 0px 12px;
-display: flex;
-flex-wrap: wrap;
+margin:0px 12px 0px 12px;
+display: inline;
+position: relative;
 }
 li:first-child {
-    padding-left: 0px;
+    margin-left: 0px;
 }
 li:last-child {
-    padding-right: 0;
+    margin-right: 0;
 }
 .menu__link {
 font-size: 11px;
@@ -72,10 +78,12 @@ font-family: Montserrat;
 font-weight: 400;
 letter-spacing: 1.3px;
 text-transform: uppercase;
-color: #fff; 
+color: #fff;
+text-decoration: none;
 }
 .logotip {
 width: 176px;
+<<<<<<< HEAD
  }
 /* li {
 list-style-type: none;
@@ -110,6 +118,9 @@ align-items: center;
 width: 100%;
 background: rgba(255, 255, 255, 0.3);
 } */
+=======
+}
+>>>>>>> 4ec26bd82fa32c13e3de8531be4956edbdfda3c1
 
 /* ---------------------------------------------HEADER-END--------------------------------------------------------- */
 
@@ -122,7 +133,6 @@ background: rgba(255, 255, 255, 0.3);
 .main {
     width: 800px;
     min-height: 2080px;
-    padding-top: 58px;
 }
 /* -------------------------------------------BLOCK-ONE------------------------------------------- */
 .block_one {
@@ -215,18 +225,23 @@ background: rgba(255, 255, 255, 0.3);
 /* -------------------------------------BLOCK-TWO------------------------------------- */
 .block_two {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+.block_two .block_two-main .block_two-buttons:hover .block_two-btn {
+    text-decoration: underline;
 }
 .block_two-main {
-    position: relative;
     display: flex;
-    width: 800px;
-    min-height: 180px;
     flex-direction: column;
+    min-height: 110px;
 }
 .block_two-main-text {
-    width: 680px;
     min-height: 80px;
-    padding: 35px 60px 0px 60px;
+    display: flex;
 }
 .block_two-text {
     font-family: 'Lato';
@@ -240,9 +255,9 @@ background: rgba(255, 255, 255, 0.3);
 
 }
 .block_two-buttons {
-    width: 158px;
-    padding: 0px 582px 35px 60px;
     text-decoration: none;
+    display: flex;
+    min-height: 30px;
 }
 .block_two-btn {
     text-decoration: none;
@@ -453,16 +468,19 @@ background: rgba(255, 255, 255, 0.3);
 }
 /* -------------------------------------BLOCK-SIX-------------------------------------------- */
 .block_six {
-    width: 800px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
 }
 .block_six_main {
-    width: 680px;
-    height: 80px;
-    padding: 35px 60px 0px 60px;
+    min-height: 80px;
+}
+.block-six-btn {
+    display: flex;
+    flex-direction: column;
 }
 .block_six_text {
     font-family: 'Lato';
@@ -472,10 +490,11 @@ background: rgba(255, 255, 255, 0.3);
     color: #333333;
     margin: 0;
     width: 661px;
+    min-height: 80px;
 }
 .block_six_buttons {
-    width: 158px;
-    padding: 0px 582px 35px 60px;
+    display: flex;
+    min-height: 30px;
 }
 .block_six_btn {
     font-family: 'Lato';
@@ -485,6 +504,9 @@ background: rgba(255, 255, 255, 0.3);
     color: #8D4FDB;
     text-decoration: none;
 }
+.block_six .block-six-btn .block_six_buttons:hover .block_six_btn {
+    text-decoration: underline;
+}
 /* -------------------------------------BLOCK-SEVEN-------------------------------------------- */
 .block_seven {
     width: 800px;
@@ -492,11 +514,12 @@ background: rgba(255, 255, 255, 0.3);
     background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .block_seven_title {
     width: 300px;
     height: 36px;
-    padding: 49px 250px 21px 250px;
+    margin: 49px 0px 21px 0px;
     display: flex;
 }
 .block_seven_text {
@@ -508,10 +531,15 @@ background: rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 .block_seven_buttons {
-    width: 182px;
-    height: 45px;
-    padding: 0px 309px 60px 309px;
     display: flex;
+}
+.block_seven .block_seven_buttons:hover .block_seven_btn {
+    background-color: #F1F1F1;
+    font-size: 10px;
+    transition: all 0.3s ease-in-out;
+    color: #8D4FDB;
+    border: 1px solid transparent;
+    border-color: #8D4FDB;
 }
 .block_seven_btn {
     margin: 0;
@@ -525,6 +553,7 @@ background: rgba(255, 255, 255, 0.3);
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: #8D4FDB;
+    border: 1px solid transparent;
     border-radius: 3px;
     padding: 8px 25px 7px 25px;
 }
