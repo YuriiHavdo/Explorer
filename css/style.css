@@ -153,6 +153,7 @@ text-decoration: none;
     font-size: 28px;
     line-height: 35px;
     color: #fff;
+    max-width: 470px;
 }
 /* -------------------------------------TRAVEL-LOGO------------------------------------- */
 .travel-logo {
