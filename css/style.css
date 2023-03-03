@@ -16,7 +16,7 @@ max-width: 100%;
 }
 ._container {
 max-width: 800px;
-max-height: 2080px;
+max-height: 1741px;
 margin: 0 auto;
 padding: 0px 15px 0px 15px;
 box-sizing: content-box;
@@ -86,7 +86,7 @@ text-decoration: none;
 }
 /* ---------------------------------------------MAIN--------------------------------------------------------- */
 .main {
-    min-height: 2080px;
+    min-height: 1900px;
 }
 /* -------------------------------------------BLOCK-ONE-TOP------------------------------------------- */
 .block-one {
@@ -98,10 +98,9 @@ text-decoration: none;
     justify-content: flex-end;
     background-image: url(../img/block-one-background.png);
     position: relative;
-    padding: 160px 60px 40px 60px;
-}
-.block-one-top-main {
-    max-width: 680px;
+    padding: 60px 60px 40px 60px;
+    height: 330px;
+    box-sizing: border-box;
 }
 .block-one-top-info {
     display: flex;
@@ -217,6 +216,11 @@ text-decoration: none;
     padding: 160px 60px 40px 60px;
     background-image: url(../img/block-three-background.png);
     position: relative;
+}
+.block-two-top-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .block-two-top-info {
     display: flex;
@@ -417,10 +421,11 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 49px 250px 60px 250px;
+    padding: 49px 60px 60px 60px;
 }
 .block-four-main {
     min-width: 300px;
+    min-height: 102px;
 }
 .block_seven_title {
     display: flex;
@@ -522,11 +527,14 @@ text-decoration: none;
     min-width: 300px;
     max-height: 269px;
     margin-right: 20px;
+    border-radius: 3px;
 }
 .featured-body-block-one-top {
     padding: 146px 0px 9px 16px;
     background-image: url(../img/featured-background-one.png);
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    min-height: 190px;
 }
 .featured-body-block-one-top-name-Luke {
     font-family: 'Montserrat';
@@ -564,7 +572,6 @@ text-decoration: none;
 }
 .featured-body-block-one-bottom-text {
     max-width: 272px;
-    max-height: 56px;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 18px;
@@ -579,11 +586,14 @@ text-decoration: none;
 /* -------------------------FEATURED-BODY-BLOCK-TWO-------------------- */
 .featured-body-block-two {
     margin-right: 20px;
+    border-radius: 3px;
 }
 .featured-body-block-two-top {
     background: url(../img/featured-background-two.png);
     background-repeat: no-repeat;
     padding: 131px 108px 20px 24px;
+    box-sizing: border-box;
+    min-height: 190px;
 }
 .featured-body-block-two-top-comments {
     display: flex;
@@ -629,10 +639,15 @@ text-decoration: none;
     max-width: 281px;
 }
 /* -------------------------FEATURED-BODY-BLOCK-THREE-------------------- */
+.featured-body-block-three {
+    border-radius: 3px;
+}
 .featured-body-block-three-top {
     background-image: url(../img/featured-background-three.png);
     background-repeat: no-repeat;
     padding: 131px 151px 20px 24px;
+    box-sizing: border-box;
+    min-height: 190px;
 }
 .featured-body-block-three-comments {
     display: flex;
@@ -661,6 +676,7 @@ text-decoration: none;
     font-size: 14px;
     line-height: 19px;
     color: #fff;
+    margin: 0;
 }
 .featured-body-block-three-jun {
     font-family: 'Lato';
@@ -687,6 +703,7 @@ text-decoration: none;
     margin-top: 56px;
     padding: 0px 350px 0px 304px;
 }
+
 .featured-footer-main {
     display: flex;
 }
@@ -747,6 +764,9 @@ text-decoration: none;
     font-size: 14px;
     line-height: 28px;
     color: #8B8B8B;
+}
+.footer-block-one-text {
+    margin: 0px 2px 0px 2px;
 }
 .footer-block-one-text-txt {
     font-family: 'Lato';
@@ -810,4 +830,10 @@ text-decoration: none;
 .footer-block-one-two {
     min-height: 66px;
     padding: 0px 70px 0px 70px;
+}
+.footer-block-two-twotitles {
+    margin-right: 2px;
+}
+.footer-block-two-title {
+    margin-right: 2px;
 }
