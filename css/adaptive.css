@@ -1,0 +1,87 @@
+
+@media (max-width: 320px) {
+    .header_container {
+        width: 320px;
+    }
+    .header {
+        width: 320px;
+        margin-top: 45px;
+    }
+    .logotip {
+        width: 120px;
+        height: 35px;
+    }
+    .header .header_menu .menu__list .menu__item {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .header_menu {
+        margin-top: 19px;
+    }
+    .header_menu .menu__list {
+        padding: 3px 0px 3px;
+    }
+    .span {
+        bottom: -7px;
+    }
+    .menu__link._padding {
+        font-size: 7px;
+        letter-spacing: 0;
+    }
+    .main {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .block-one {
+        margin-top: 20px;
+        min-width: 300px;
+    }
+    .block-one .block-one-top {
+        padding: 60px 30px 20px 30px;
+        background-size: cover;
+    }
+    .block-one-top-info {
+        max-height: 20px;
+        min-width: 260px;
+    }
+    .luce-cage-image {
+        max-height: 20px;
+    }
+    .comment_block-one_name-and-text {
+        min-height: 20px;
+    }
+    .comment_block-one-name {
+        max-height: 10px;
+    }
+    .comment_block-one-text {
+        padding: 0;
+        max-height: 10px;
+    }
+    .comment_block_one-luce-cage {
+        font-size: 7px;
+        line-height: 2;
+    }
+    .comment_block-one-date {
+        font-size: 5px;
+        line-height: 2;
+    }
+    .comment_block-one-image {
+        margin-right: 10px;
+    }
+    .travel-logo {
+        min-width: 30px;
+        min-height: 20px;
+        right: 10px;
+    }
+    .travel {
+        font-size: 5px;
+    }
+    .title-text-block-one {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .block-one-top-title {
+        margin-top: 10px;
+    }
+}
