@@ -11,12 +11,12 @@ background-image: url(../img/background.jpg);
 background-repeat: no-repeat;
 position: relative;
 background-size: cover;
-max-height: 2080px;
 max-width: 100%;
+padding-bottom: 99px;
+
 }
 ._container {
 max-width: 800px;
-max-height: 1741px;
 margin: 0 auto;
 padding: 0px 15px 0px 15px;
 box-sizing: content-box;
@@ -86,7 +86,7 @@ text-decoration: none;
 }
 /* ---------------------------------------------MAIN--------------------------------------------------------- */
 .main {
-    min-height: 1900px;
+    
 }
 /* -------------------------------------------BLOCK-ONE-TOP------------------------------------------- */
 .block-one {
@@ -517,6 +517,7 @@ text-decoration: none;
     margin: 0;
     text-align: center;
     color: #A9AFB3;
+    margin-top: 25px;
 }
 .featured_body {
     display: flex;
@@ -530,11 +531,13 @@ text-decoration: none;
     border-radius: 3px;
 }
 .featured-body-block-one-top {
-    padding: 146px 0px 9px 16px;
+    padding: 0px 0px 9px 16px;
     background-image: url(../img/featured-background-one.png);
     background-repeat: no-repeat;
     box-sizing: border-box;
     min-height: 190px;
+    display: flex;
+    align-items: end;
 }
 .featured-body-block-one-top-name-Luke {
     font-family: 'Montserrat';
@@ -591,9 +594,11 @@ text-decoration: none;
 .featured-body-block-two-top {
     background: url(../img/featured-background-two.png);
     background-repeat: no-repeat;
-    padding: 131px 108px 20px 24px;
+    padding: 0px 108px 20px 24px;
     box-sizing: border-box;
     min-height: 190px;
+    display: flex;
+    align-items: end;
 }
 .featured-body-block-two-top-comments {
     display: flex;
@@ -645,9 +650,11 @@ text-decoration: none;
 .featured-body-block-three-top {
     background-image: url(../img/featured-background-three.png);
     background-repeat: no-repeat;
-    padding: 131px 151px 20px 24px;
+    padding: 0px 151px 20px 24px;
     box-sizing: border-box;
     min-height: 190px;
+    display: flex;
+    align-items: end;
 }
 .featured-body-block-three-comments {
     display: flex;
