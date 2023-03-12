@@ -86,21 +86,27 @@ text-decoration: none;
 }
 /* ---------------------------------------------MAIN--------------------------------------------------------- */
 .main {
-    
+
+}
+._blocks-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding: 60px 60px 40px 60px;
+    min-height: 330px;
+    box-sizing: border-box;
+}
+._blocks-bottoms {
+    background-color: #fff;
+    padding: 35px 60px 35px 60px;
 }
 /* -------------------------------------------BLOCK-ONE-TOP------------------------------------------- */
 .block-one {
     margin-top: 61px;
 }
 .block-one-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     background-image: url(../img/block-one-background.png);
-    position: relative;
-    padding: 60px 60px 40px 60px;
-    height: 330px;
-    box-sizing: border-box;
 }
 .block-one-top-info {
     display: flex;
@@ -177,10 +183,6 @@ text-decoration: none;
     color: #fff;
 }
 /* -------------------------------------------BLOCK-ONE-BOTTOM------------------------------------------- */
-.block-one-bottom {
-    background-color: #fff;
-    padding: 35px 60px 35px 60px;
-}
 .block-one-bottom .block-one-bottom-main .block-one-bottom-buttons:hover .block-one-bottom-btn {
     text-decoration: underline;
 }
@@ -213,9 +215,7 @@ text-decoration: none;
 }
 /* -------------------------------------BLOCK-TWO-TOP------------------------------------- */
 .block-two-top {
-    padding: 160px 60px 40px 60px;
     background-image: url(../img/block-three-background.png);
-    position: relative;
 }
 .block-two-top-main {
     display: flex;
@@ -285,12 +285,6 @@ text-decoration: none;
     text-transform: uppercase;
 }
 /* -------------------------------------BLOCK-TWO-BOTTOM-------------------------------------------- */
-.block-two-bottom {
-    display: flex;
-    flex-direction: column;  
-    background-color: #fff;
-    padding: 35px 60px 35px 60px;
-}
 .block-two-bottom-comments {
     min-height: 80px;
 }
@@ -318,8 +312,6 @@ text-decoration: none;
 /* -------------------------------------BLOCK-THREE-TOP-------------------------------------------- */
 .block-three-top {
     background-image: url(../img/block-five-background.png);
-    position: relative;
-    padding: 160px 60px 40px 60px;
 }
 .block-three-top-comments {
     display: flex;
@@ -379,10 +371,6 @@ text-decoration: none;
     text-transform: uppercase;
 }
 /* -------------------------------------BLOCK-THREE-BOTTOM-------------------------------------------- */
-.block-three-bottom {
-    background-color: #fff;
-    padding: 35px 60px 35px 60px;
-}
 .block-three-bottom-comments {
     min-height: 80px;
 }
