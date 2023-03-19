@@ -1,20 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 body {
     margin: 0;
     width: 100%;
 }
-.wrapper {
-min-height: 100%;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-background-image: url(../img/background.jpg);
-background-repeat: no-repeat;
-position: relative;
-background-size: cover;
-max-width: 100%;
-padding-bottom: 99px;
+.wrapper { 
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    max-width: 100%;
+    padding-bottom: 99px;
 
 }
+
 /* ---------------------------------------------HEADER--------------------------------------------------------- */
 .header {
     display: flex;
@@ -183,6 +189,7 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 661px;
 }
 .post .block-bottom .main-bottom .link {
+    max-width: 158px;
     text-decoration: none;
     color: #8D4FDB;
     font-family: 'Lato';
@@ -190,7 +197,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 17px;
     line-height: 30px
 }
-.post .block-bottom .main-bottom:hover .link{
+.post .block-bottom .main-bottom .link:hover{
     text-decoration: underline;
 }
 
@@ -308,7 +315,6 @@ h1,h2,h3,h4,h5,h6 {
 .secondary .secondary-block .secondary-body .card {
     min-width: 300px;
     margin-right: 20px;
-    border-radius: 3px;
 }
 .secondary .secondary-block .secondary-body .card .card-main {
     padding: 24px;
@@ -318,6 +324,7 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 190px;
     display: flex;
     align-items: end;
+    border-radius: 3px;
 }
 .secondary .secondary-block .secondary-body .card .card-main .card-info {
     display: flex;
@@ -357,6 +364,7 @@ h1,h2,h3,h4,h5,h6 {
 /* -------------------------------------CARD-TWO------------------------------------- */
 .secondary .secondary-block .secondary-body .card.two .card-main.image {
     background-image: url(../img/featured-background-two.png);
+    border-radius: 3px;
 }
 /* -------------------------------------CARD-THREE------------------------------------- */
 .secondary .secondary-block .secondary-body .card.three {
@@ -364,6 +372,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .secondary .secondary-block .secondary-body .card.three .card-main.image {
     background-image: url(../img/featured-background-three.png);
+    border-radius: 3px;
 }
 /* -------------------------------------SECONDARY-FOOTER------------------------------------- */
 .secondary .secondary-block .secondary-footer {
@@ -404,7 +413,7 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 166px;
+    padding: 55px;
 }
 /* -----------------------------FOOTER-BLOCK ONE--------------------------- */
 .footer .footer-main .footer-block {
