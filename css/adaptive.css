@@ -1,87 +1,124 @@
-
-@media (max-width: 320px) {
-    .header_container {
-        width: 320px;
-    }
-    .header {
-        width: 320px;
-        margin-top: 45px;
-    }
-    .logotip {
-        width: 120px;
-        height: 35px;
-    }
-    .header .header_menu .menu__list .menu__item {
-        margin-right: 5px;
-        margin-left: 5px;
-    }
-    .header_menu {
-        margin-top: 19px;
-    }
-    .header_menu .menu__list {
-        padding: 3px 0px 3px;
-    }
-    .span {
-        bottom: -7px;
-    }
-    .menu__link._padding {
-        font-size: 7px;
-        letter-spacing: 0;
-    }
-    .main {
-        width: 300px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .block-one {
-        margin-top: 20px;
-        min-width: 300px;
-    }
-    .block-one .block-one-top {
-        padding: 60px 30px 20px 30px;
-        background-size: cover;
-    }
-    .block-one-top-info {
-        max-height: 20px;
-        min-width: 260px;
-    }
-    .luce-cage-image {
-        max-height: 20px;
-    }
-    .comment_block-one_name-and-text {
-        min-height: 20px;
-    }
-    .comment_block-one-name {
-        max-height: 10px;
-    }
-    .comment_block-one-text {
-        padding: 0;
-        max-height: 10px;
-    }
-    .comment_block_one-luce-cage {
-        font-size: 7px;
-        line-height: 2;
-    }
-    .comment_block-one-date {
-        font-size: 5px;
-        line-height: 2;
-    }
-    .comment_block-one-image {
-        margin-right: 10px;
-    }
-    .travel-logo {
-        min-width: 30px;
-        min-height: 20px;
-        right: 10px;
-    }
-    .travel {
-        font-size: 5px;
-    }
-    .title-text-block-one {
-        font-size: 15px;
-        line-height: 25px;
-    }
-    .block-one-top-title {
-        margin-top: 10px;
+/* 
+@media (max-width: 800px) {
+    .post .block-top {
+        padding: calc(26px + (60 - 26) * ((100vw - 768px) / (800 - 768)));
     }
 }
+ */
+
+@media (max-width: 768px) {
+    .main {
+        max-width: 520px;
+    }
+    .post .block-top {
+        padding: 26px;
+    }
+    .post .block-top .block-main .block-info .user-meta .name {
+        font-size: 16px;
+    }
+    .post .block-top .block-main .block-info .user-meta .date {
+        font-size: 12px;
+    }
+    .post .block-top .block-main .title {
+        margin-top: 16px;
+        font-size: 24px;
+    }
+    .post .block-top { 
+        min-height: 261px;
+    }
+    .post .block-top .snippet {
+        line-height: 10px;
+        min-height: 21px;
+        right: 10px;
+        top: 10px;
+    }
+    .post .block-bottom {
+        padding: 26px 28px;
+    }
+    .post .block-bottom .main-bottom .text-bottom {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .post .block-bottom .main-bottom .link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .lower-block {
+        padding: 30px;
+    }
+    .lower-block .lower-block-main .title {
+        font-size: 28px;
+    }
+    .lower-block .lower-block-main .button {
+        min-height: 38px;
+        min-width: 158px;
+    }
+    .header {
+        margin-top: 20px;
+    }
+    .header .header_logo {
+        justify-content: start;
+        margin-left: 20px;
+    }
+        .image-logo {
+            max-width: 133px;
+            max-height: 30px;
+        }
+        .wrapper {
+            padding-bottom: 71px;
+        }
+        .secondary .secondary-block {
+            padding-top: 50px;
+        }
+        .secondary .secondary-block .secondary-head .title {
+            font-size: 36px;
+        }
+        .secondary .secondary-block .secondary-head .text {
+            margin-top: 12px;
+            font-size: 20px;
+        }
+        .secondary .secondary-block .secondary-body {
+            margin-top: 44px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .secondary .secondary-block .secondary-body .card {
+            margin: 0;
+        }
+        .card-image {
+            width: 32px;
+            height: 32px;
+        }
+        .secondary .secondary-block .secondary-body .card .card-main .card-info .user-meta .name {
+            line-height: 19px;
+        }
+
+        .secondary .secondary-block .secondary-body .card .card-main .card-info .user-meta .date {
+            font-size: 12px;
+            line-height: 14px;
+        }
+        .secondary .secondary-block .secondary-body .card .card-main {
+            padding: 18px;
+        }
+        .secondary .secondary-block .secondary-body .card .card-text {
+           margin-top: 16px;
+        }
+        .secondary .secondary-block .secondary-body .card.two {
+            margin-top: 28px;
+        }
+        .secondary .secondary-block .secondary-body .card.three {
+            margin-top: 28px;
+        }
+        .secondary .secondary-block .secondary-footer {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+        .secondary .secondary-block .secondary-body .card .card-text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+}
+

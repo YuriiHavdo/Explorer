@@ -86,10 +86,10 @@ li:last-child {
 }
 /* ---------------------------------------------MAIN--------------------------------------------------------- */
 .main {
-max-width: 800px;
-margin: 0 auto;
-padding: 0px 15px 0px 15px;
-box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0px 15px 0px 15px;
+    box-sizing: content-box;
+    max-width: 800px;
 }
 p {
     margin: 0;
@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6 {
     background-image: url(../img/block-one-background.png);
 }
 .post .block-top .block-main {
-    min-width: 680px;
+    /* min-width: 680px; */
 }
 .post .block-top .block-main .block-info {
     display: flex;
@@ -313,7 +313,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 /* -------------------------------------CARD-ONE------------------------------------ */
 .secondary .secondary-block .secondary-body .card {
-    min-width: 300px;
     margin-right: 20px;
 }
 .secondary .secondary-block .secondary-body .card .card-main {
