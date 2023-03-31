@@ -252,7 +252,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 30px;
     line-height: 36px;
     color: #333333;
-    min-width: 300px;
 }
 .lower-block .lower-block-main .button {
     margin-top: 21px;
