@@ -4,9 +4,7 @@
     .main {
         max-width: 700px;
     }
-
 }
- 
   @media screen and (max-width: 768px) {
     .main {
         max-width: 520px;
@@ -266,4 +264,22 @@
         .sub-menu ul li a:hover {
             background: rgba(106, 93, 93, 0.4);
         }
+        .overflow {
+            overflow: hidden;
+        }
+}
+@media screen and (max-width: 568px) {
+    .footer .footer-main {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 538px) {
+    .footer .footer-main {
+        padding: 35px;
+    }
+}
+@media screen and (max-width: 531px) {
+    .footer .footer-main {
+        padding: 33px;
+    }
 }

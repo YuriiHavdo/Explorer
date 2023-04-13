@@ -61,31 +61,20 @@ body {
 .sub-menu {
     display: none;
 }
-.span {
-    position: absolute;
-    bottom: -14px;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.5s ease;
-}
-/* li a::after {
+ .menu .menu-list .menu-item .menu-link::after {
     content: "";
     display: block;
     height: 2px;
     width: 0%;
-    top: 20px;
-    transition: all 0.3s;
+    bottom: -14px;
+    transition: all 0.5s;
     position: absolute;
   }
   
-  li a:hover::after {
+  .menu .menu-list .menu-item .menu-link:hover::after {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3)
-  } */
-.menu .menu-list .menu-item:hover .span {
-    background-color: rgba(255, 255, 255, 0.3);
-}
+  } 
 li:first-child {
     margin-left: 0px;
 }
@@ -458,14 +447,6 @@ h1,h2,h3,h4,h5,h6 {
 .footer .footer-main .footer-block .link:hover {
     text-decoration: underline;
 }
-.footer .footer-main .footer-block .link::before {
-    content: "(";
-    color: #8B8B8B;
-}
-.footer .footer-main .footer-block .link::after {
-    content: ")";
-    color: #8B8B8B;
-}
 
 /* -----------------------------FOOTER-BLOCK TWO--------------------------- */
 
@@ -476,10 +457,4 @@ h1,h2,h3,h4,h5,h6 {
 }
 .footer .footer-main .footer-block.two .link {
     font-size: 14px;
-}
-.footer .footer-main .footer-block.two .link::before {
-    content: none;
-}
-.footer .footer-main .footer-block.two .link::after {
-    content: none;
 }
