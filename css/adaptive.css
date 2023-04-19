@@ -222,9 +222,7 @@
             top: 0;
             -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
-         }
-                          /* SUB-MENU */
-            
+         }    
         .sub-menu {
             display: none;
             position: fixed;
@@ -275,11 +273,77 @@
 }
 @media screen and (max-width: 538px) {
     .footer .footer-main {
-        padding: 35px;
+        padding: 31px;
     }
 }
-@media screen and (max-width: 531px) {
+@media screen and (max-width: 491px) {
     .footer .footer-main {
-        padding: 33px;
+        padding: 29px;
+    }
+}
+@media screen and (max-width: 487px) {
+    .footer .footer-main .footer-block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 423px) {
+    .wrapper {
+        padding-bottom: 50px;
+    }
+    .post .block-top .block-main .title {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+    .post .block-top {
+        min-height: 250px;
+        padding: 24px;
+    }
+    .post .block-top .block-main .block-info .user-meta .name {
+        font-size: 15px;
+    }
+    .post .block-top .block-main .block-info .user-meta .date {
+        font-size: 11px;
+    }
+    .post .block-bottom {
+        padding: 17px 20px;
+    }
+    .post .block-bottom .main-bottom .text-bottom {
+        font-size: 14px;
+    }
+    .post .block-bottom .main-bottom .link {
+        font-size: 14px;
+    }
+    .post .block-bottom .main-bottom .link {
+        margin-top: 9px;
+    }
+    .post.second .block-top .block-main .title {
+        font-size: 21px;
+        margin-top: 10px;
+    }
+    .lower-block {
+        padding: 25px;
+    }
+    .lower-block .lower-block-main .title {
+        font-size: 25px;
+    }
+    .lower-block .lower-block-main .button {
+        min-width: 145px;
+        min-height: 30px;
+        margin-top: 15px;
+        font-size: 8px;
+    }
+    .lower-block .lower-block-main .button:hover {
+        font-size: 8px;
+    }
+    .secondary .secondary-block .secondary-head .title {
+        font-size: 32px;
+    }
+    .secondary .secondary-block .secondary-head .text {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    .secondary .secondary-block .secondary-body {
+        margin-top: 33px;
     }
 }
