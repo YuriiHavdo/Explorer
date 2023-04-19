@@ -347,3 +347,8 @@
         margin-top: 33px;
     }
 }
+@media screen and (max-width: 356px) {
+    .footer .footer-main {
+        padding: 20px;
+    } 
+}
